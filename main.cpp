@@ -3,11 +3,13 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char** argv) {
-    char text;
-	printf("enter a character:");
-	scanf("%c",&text);
-	
-	printf("The next character of %c (%d) is %c (%d) \n",text,text,text+1,text+1); 
-	
+    int a,b;
+    printf("분자를 입력하세요.:");
+    scanf("%d", &a);
+    
+    printf("분모를 입력하세요:");
+    scanf("%d", &b);
+    
+    printf("나누기의 결과값은 %f 입니다.",(float)a/b);
 	return 0;
 }
